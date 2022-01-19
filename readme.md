@@ -2,4 +2,5 @@
 
 yarn dev
 
-yarn 
+yarn typeorm migration:run
+
