@@ -2,30 +2,23 @@
 
 <h3> How Start This Project? </h3>
 
-```
-  First, Install Dependencies, Node, Yarn
-```
-
-<hr/>
+<strong> First, Install Dependencies, Node, Yarn and open folder in terminal </strong>
 
 ```
-  Run in terminal: yarn install
+  run: yarn install
 ```
 
-<hr/>
-
-```
-  After build the node_modules, run express server
-```
+<strong> After build the node_modules, run express server </strong>
 
 ```
   yarn dev
 ```
 
-```
-  use Postman, Insomnia to test API routes.
-```
+This server run in PORT 3333
 
+<strong> use Postman, Insomnia to test API routes. </strong>
+
+<hr/>
 --- ENDPOINTS --
 work in progress...
 
