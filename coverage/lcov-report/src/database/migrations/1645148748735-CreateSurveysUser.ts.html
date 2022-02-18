@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/database/migrations/1642606078589-CreateUsers.ts</title>
+    <title>Code coverage report for src/database/migrations/1645148748735-CreateSurveysUser.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/database/migrations</a> 1642606078589-CreateUsers.ts</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/database/migrations</a> 1645148748735-CreateSurveysUser.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">15% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/36</span>
+                <span class='fraction'>9/60</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">15% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/36</span>
+                <span class='fraction'>9/60</span>
             </div>
         
             
@@ -99,10 +99,58 @@
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -137,11 +185,12 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {MigrationInterface, QueryRunner, Table} from "typeorm";
 &nbsp;
-export class CreateUsers1642606078589 implements MigrationInterface {
+export class CreateSurveysUser1645148748735 implements MigrationInterface {
+&nbsp;
     public async <span class="fstat-no" title="function not covered" >up(queryRunner: QueryRunner): Promise&lt;void&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        await queryRunner.createTable(</span>
 <span class="cstat-no" title="statement not covered" >            new Table({</span>
-<span class="cstat-no" title="statement not covered" >                name: "users",</span>
+<span class="cstat-no" title="statement not covered" >                name: "surveys_users",</span>
 <span class="cstat-no" title="statement not covered" >                columns: [</span>
 <span class="cstat-no" title="statement not covered" >                    {</span>
 <span class="cstat-no" title="statement not covered" >                        name: "id",</span>
@@ -149,17 +198,40 @@ export class CreateUsers1642606078589 implements MigrationInterface {
 <span class="cstat-no" title="statement not covered" >                        isPrimary: true</span>
 <span class="cstat-no" title="statement not covered" >                    },</span>
 <span class="cstat-no" title="statement not covered" >                    {</span>
-<span class="cstat-no" title="statement not covered" >                        name: "name",</span>
-<span class="cstat-no" title="statement not covered" >                        type: "varchar",</span>
+<span class="cstat-no" title="statement not covered" >                        name: "user_id",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "uuid",</span>
 <span class="cstat-no" title="statement not covered" >                    },</span>
 <span class="cstat-no" title="statement not covered" >                    {</span>
-<span class="cstat-no" title="statement not covered" >                        name: "email",</span>
-<span class="cstat-no" title="statement not covered" >                        type: "varchar"</span>
+<span class="cstat-no" title="statement not covered" >                        name: "survey_id",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "uuid"</span>
+<span class="cstat-no" title="statement not covered" >                    },</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "value",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "number",</span>
+<span class="cstat-no" title="statement not covered" >                        isNullable: true</span>
 <span class="cstat-no" title="statement not covered" >                    },</span>
 <span class="cstat-no" title="statement not covered" >                    {</span>
 <span class="cstat-no" title="statement not covered" >                        name: "created_at",</span>
 <span class="cstat-no" title="statement not covered" >                        type: "timestamp",</span>
 <span class="cstat-no" title="statement not covered" >                        default: "now()"</span>
+<span class="cstat-no" title="statement not covered" >                    }</span>
+<span class="cstat-no" title="statement not covered" >                ],</span>
+<span class="cstat-no" title="statement not covered" >                foreignKeys: [</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "FKUser",</span>
+<span class="cstat-no" title="statement not covered" >                        referencedTableName: "users",</span>
+<span class="cstat-no" title="statement not covered" >                        referencedColumnNames: ["id"],</span>
+<span class="cstat-no" title="statement not covered" >                        columnNames: ["user_id"],</span>
+<span class="cstat-no" title="statement not covered" >                        onDelete: "CASCADE",</span>
+<span class="cstat-no" title="statement not covered" >                        onUpdate: "CASCADE",</span>
+<span class="cstat-no" title="statement not covered" >                    },</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "FKSurvey",</span>
+<span class="cstat-no" title="statement not covered" >                        referencedTableName: "surveys",</span>
+<span class="cstat-no" title="statement not covered" >                        referencedColumnNames: ["id"],</span>
+<span class="cstat-no" title="statement not covered" >                        columnNames: ["survey_id"],</span>
+<span class="cstat-no" title="statement not covered" >                        onDelete: "CASCADE",</span>
+<span class="cstat-no" title="statement not covered" >                        onUpdate: "CASCADE",</span>
 <span class="cstat-no" title="statement not covered" >                    }</span>
 <span class="cstat-no" title="statement not covered" >                ]</span>
 <span class="cstat-no" title="statement not covered" >            })</span>
@@ -167,7 +239,7 @@ export class CreateUsers1642606078589 implements MigrationInterface {
 <span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     public async <span class="fstat-no" title="function not covered" >down(queryRunner: QueryRunner): Promise&lt;void&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        await queryRunner.dropTable("users")</span>
+<span class="cstat-no" title="statement not covered" >        await queryRunner.dropTable("surveys_users")</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
 }
