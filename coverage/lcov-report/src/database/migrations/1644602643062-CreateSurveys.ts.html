@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.59% </span>
+                <span class="strong">24.32% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>35/37</span>
+                <span class='fraction'>9/37</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.59% </span>
+                <span class="strong">24.32% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>35/37</span>
+                <span class='fraction'>9/37</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -105,32 +105,32 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -141,33 +141,33 @@
 &nbsp;
 export class CreateSurveys1644602643062 implements MigrationInterface {
 &nbsp;
-    public async up(queryRunner: QueryRunner): Promise&lt;void&gt; {
-        await queryRunner.createTable(
-            new Table({
-                name: "surveys",
-                columns: [
-                    {
-                        name: "id",
-                        type: "uuid",
-                        isPrimary: true
-                    },
-                    {
-                        name: "title",
-                        type: "varchar",
-                    },
-                    {
-                        name: "description",
-                        type: "varchar"
-                    },
-                    {
-                        name: "created_at",
-                        type: "timestamp",
-                        default: "now()"
-                    }
-                ]
-            })
-        )
-    }
+    public async <span class="fstat-no" title="function not covered" >up(queryRunner: QueryRunner): Promise&lt;void&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        await queryRunner.createTable(</span>
+<span class="cstat-no" title="statement not covered" >            new Table({</span>
+<span class="cstat-no" title="statement not covered" >                name: "surveys",</span>
+<span class="cstat-no" title="statement not covered" >                columns: [</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "id",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "uuid",</span>
+<span class="cstat-no" title="statement not covered" >                        isPrimary: true</span>
+<span class="cstat-no" title="statement not covered" >                    },</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "title",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "varchar",</span>
+<span class="cstat-no" title="statement not covered" >                    },</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "description",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "varchar"</span>
+<span class="cstat-no" title="statement not covered" >                    },</span>
+<span class="cstat-no" title="statement not covered" >                    {</span>
+<span class="cstat-no" title="statement not covered" >                        name: "created_at",</span>
+<span class="cstat-no" title="statement not covered" >                        type: "timestamp",</span>
+<span class="cstat-no" title="statement not covered" >                        default: "now()"</span>
+<span class="cstat-no" title="statement not covered" >                    }</span>
+<span class="cstat-no" title="statement not covered" >                ]</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+<span class="cstat-no" title="statement not covered" >        )</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     public async <span class="fstat-no" title="function not covered" >down(queryRunner: QueryRunner): Promise&lt;void&gt; {</span>
 <span class="cstat-no" title="statement not covered" >        await queryRunner.dropTable("surveys")</span>
@@ -181,7 +181,7 @@ export class CreateSurveys1644602643062 implements MigrationInterface {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Thu Feb 17 2022 22:44:04 GMT-0300 (Horário Padrão de Brasília)
+                at Thu Feb 17 2022 23:45:39 GMT-0300 (Horário Padrão de Brasília)
             </div>
         <script src="../../../prettify.js"></script>
         <script>
