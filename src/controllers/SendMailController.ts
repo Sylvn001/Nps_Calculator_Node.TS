@@ -30,7 +30,7 @@ class SendMailController{
 
     const surveyUser = surveysUsersRepository.create({
       user_id: userAlreadyExists.id,
-      survey_id,
+      survey_id
     })
 
     await surveysUsersRepository.save(surveyUser)
