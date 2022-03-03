@@ -5,7 +5,7 @@ class SendMailService{
 
   constructor(){
     nodemailer.createTestAccount().then(account => {
-      let transporter = nodemailer.createTransport({
+      const transporter = nodemailer.createTransport({
         host: account.smtp.host,
         port: account.smtp.port,
         secure: account.smtp.secure,
@@ -20,10 +20,18 @@ class SendMailService{
 
   }
 
-  async execute(){
-
+  async execute(to: string, subject: string, body: string){
+    const message = await this.client.sendMail({
+      from: "NPS <noreplay@nps.com.br",
+      to,
+      subject,
+      text: "",
+      html: body,
+    })
+    console.log('Message sent: %s', message.messageId);
+    console.log('Preview URL: %s', nodemailer.getTestMessageUrl(message));
   }
 
 }
 
-export {SendMailService}
+export default new SendMailService()
