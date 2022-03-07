@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { resolve } from "path";
 import { getCustomRepository } from "typeorm";
 import { SurveysRepository } from "../repositories/SurveysRepository";
 import { SurveysUsersRepository } from "../repositories/SurveysUsersRepository";
@@ -14,7 +15,6 @@ class SendMailController{
     const surveysUsersRepository = getCustomRepository(SurveysUsersRepository)
 
     const userAlreadyExists = await usersRepository.findOne({ email })
-
     if(!userAlreadyExists){
       return response.status(400).json({
         error: "User does not exists"
@@ -22,11 +22,29 @@ class SendMailController{
     }
 
     const surveyAlreadyExists = await surveyRepository.findOne({id: survey_id})
-
     if(!surveyAlreadyExists){
       return response.status(400).json({
         error: "Survey does not exist"
       })
+    }
+
+    const npsPath = resolve(__dirname,'..', "views", "emails", "npsMail.hbs")
+    const variables = {
+      name: userAlreadyExists.name,
+      title: surveyAlreadyExists.title,
+      description: surveyAlreadyExists.description,
+      user_id: userAlreadyExists.id,
+      link: process.env.URL_MAIL
+    }
+
+    const surveyUserAlreadyExists = await surveysUsersRepository.findOne({
+      where: { user_id: userAlreadyExists.id, value: null },
+      relations: ["user", "survey"],
+    });
+
+    if(surveyUserAlreadyExists){
+      await SendMailService.execute(email,surveyAlreadyExists.title,variables,npsPath)
+      return response.status(201).json(surveyUserAlreadyExists)
     }
 
     const surveyUser = surveysUsersRepository.create({
@@ -35,14 +53,7 @@ class SendMailController{
     })
 
     await surveysUsersRepository.save(surveyUser)
-    await SendMailService.execute(
-      email,
-      surveyAlreadyExists.title,
-      surveyAlreadyExists.description
-    )
-
     return response.status(201).json({surveyUser})
-
   }
 }
 
