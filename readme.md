@@ -1,4 +1,4 @@
-# Nps Calculator Node.JS
+# Nps Calculator Node.TS
 
 > A basic API Restful using Javascript - Node.js, to calculate NPS of a survey.
 
